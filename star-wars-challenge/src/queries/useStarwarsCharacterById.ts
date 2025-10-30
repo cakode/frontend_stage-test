@@ -9,8 +9,8 @@ export function useStarwarsCharacterById(id: number) {
       if (!id) throw new Error("Character ID is required");
       return fetchStarwarsCharacterById(id);
     },
-    enabled: !!id, // fetch pas als id bestaat
-    staleTime: 1000 * 60 * 5, // 5 min cache
-    retry: 1, // 1 retry bij netwerkfout
+    enabled: !!id,
+    staleTime: Infinity,
+    retry: 1,
   });
 }
