@@ -22,13 +22,6 @@ API: https://akabab.github.io/starwars-api/
 - Auto‑block evil characters based on clear domain rules (see below)
 - Styled using pure CSS & tailwind
 
-## 🔧 Getting Started
-1) Install deps
-- npm install
-
-2) Run dev server
-- npm run dev
-
 ## ⚙️ Performance Choices
 
 - The app uses a static REST API, so both React Query hooks use staleTime: 1h — this minimizes redundant requests while still - - allowing background updates if the API ever changes.
@@ -79,6 +72,13 @@ API: https://akabab.github.io/starwars-api/
 - git clone https://github.com/cakode/frontend_stage-test.git
 - cd frontend_stage-test 
 - cd star-wars-challenge
+
+## 🔧 Getting Started
+1) Install deps
+- npm install
+
+2) Run dev server
+- npm run dev
 
 ## 🤖 AI Usage — Prompts Used
 
