@@ -10,7 +10,7 @@ export function useStarwarsCharacterById(id: number) {
       return fetchStarwarsCharacterById(id);
     },
     enabled: !!id,
-    staleTime: Infinity,
+    staleTime: 60 * 60 * 1000,
     retry: 1,
   });
 }

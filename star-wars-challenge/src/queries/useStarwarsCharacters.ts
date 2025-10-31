@@ -6,7 +6,7 @@ export function useStarwarsCharacters() {
   return useQuery<StarWarsCharacter[]>({
     queryKey: ["starwarsCharacters"],
     queryFn: fetchStarwarsCharacters,
-    staleTime: Infinity,
+    staleTime: 60 * 60 * 1000,
     retry: 1,
   });
 }
